@@ -89,17 +89,6 @@ function drawText() {
     context.shadowOffsetX = 0;
     context.shadowOffsetY = 0;
 
-    if(frameNumber < 250){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("everyday day I cannot believe how lucky I am", canvas.width/2, canvas.height/2);
-        opacity = opacity + 0.01;
-    }
-    //fades out the text by decreasing the opacity
-    if(frameNumber >= 250 && frameNumber < 500){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("everyday day I cannot believe how lucky I am", canvas.width/2, canvas.height/2);
-        opacity = opacity - 0.01;
-    }
 
     //needs this if statement to reset the opacity before next statement on canvas
     if(frameNumber == 500){
